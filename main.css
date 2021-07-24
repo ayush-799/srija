@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display", "B612", sans-serif;
+  font-size: 4rem;
+}
+.sh-1 {
+  text-shadow: 3px 2px 0px black;
+}
+
+.s1 {
+  /* background-color: #3498db; */
+  background: url(images/header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: red;
+}
+
+.sh-2 {
+  padding: 10px;
+}
+
+.message-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 40px;
+}
+.messages {
+  font-size: 1.5rem;
+  width: 20%;
+  background-color: white;
+  padding: 15px;
+  border: white;
+  border-radius: 20px;
+  color: #3498db;
+  opacity: 0.7;
+}
+.s4 {
+  background: url(images/korea.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  background-color: #c06c84 !important;
+}
+span.highlight {
+  background-color: paleturquoise !important;
+}
+p {
+  font-size: 2rem;
+}
+.i {
+  font-style: italic;
+}
+
+.hexa-pic-1 {
+  background: url(images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  width: 250px;
+  background-position-y: inherit;
+  transform: rotate(0deg);
+  position: absolute;
+  right: 40px;
+  bottom: 30px;
+}
+
+.hexagon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/******polaroid*******/
+.polaroid-wrapper {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 30% 50%;
+}
+.polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 50px 70px 25px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+.polaroid a:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+img {
+  display: block;
+  width: 250px;
+  height: 280px;
+}
+.polaroid a:hover {
+  -webkit-transform: scale(1.2) rotate(0deg) !important;
+  -moz-transform: scale(1.2) rotate(0deg) !important;
+  transform: scale(1.2) rotate(0deg) !important;
+  z-index: 10;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+#a1 {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+#a2 {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+#a3 {
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  transform: rotate(-6deg);
+}
+#a4 {
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+#a5 {
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+#a6 {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+@media only screen and (max-width: 600px) {
+  .polaroid a {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+img {
+  display: block;
+  width: 150px;
+  height: 180px;
+}
+.polaroid-wrapper {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 30% 50%;
+}
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday</title>
+	<link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.css"
+		integrity="sha512-1No3nMY/zD37h1POyqULfwc9WMzWvXcal6F7/OIhNdWkTaEbt4Y6eqX0vXail7Zh5JjnBdMMKr+lRvqTNFr3Ow=="
+		crossorigin="anonymous" />
+		<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<div id="fullPage">
+	<div class="section s1 animate__delay-2s">
+		<div class="hexagon hexa-pic-1"></div>
+		<h1 class="sh-1 wow animate__animated animate__backInUp">Happy Birthday Srija Sharma!</h1>
+		<p class="i wow animate__animated animate__backInUp">I wish you an amazing birthday filled with hugs, kisses and plenty of love and happiness.</p>
+	</div>
+	
+	<div class="section s4">
+		<div class="polaroid-wrapper">
+			<div class="polaroid">
+				<a id="a1" href="#" title="kuchu">
+					<img 
+						src="images/2.jpg"
+						 />
+				</a>
+			</div>
+			<div class="polaroid">
+				<a id="a2" href="#" title="kuchu">
+					<img 
+						src="images/3.jpg" />
+				</a>
+			</div>
+			<div class="polaroid">
+				<a id="a3" href="#" title="kuchu">
+					<img 
+						src="images/4.jpg"  />
+				</a>
+			</div>
+			<div class="polaroid">
+				<a id="a4" href="#" title="kuchu">
+					<img 
+						src="images/5.jpg"
+						 />
+				</a>
+			</div>
+			<div class="polaroid">
+				<a id="a5" href="#" title="kuchu">
+					<img 
+						src="images/6.jpg"
+						 />
+				</a>
+			</div>
+				<div class="polaroid">
+					<a id="a6" href="#" title="kuchu">
+						<img 
+							src="images/7.jpg"
+							/>
+					</a>
+				</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"
+	integrity="sha512-eH2N2Zt2AeLuFlFvRSEeZcVeAESY+8nfIqhxx0XXEou6w/G4lLY3K8UKNYqi6e1pLXDduVF1KF/lbyxy3+X6OA=="
+	crossorigin="anonymous"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+<script type="text/javascript">
+	//initialise the fullscreen plugin
+	new fullpage("#fullPage",{
+		autoScrolling: true,
+		navigation:true,
+		anchors: ['section1','section2','section3'],
+		navigationTooltips:['First Greeting','Gallery','Messages','More Greetings'],
+		showActiveTooltip: true,
+		controlArrows: false,
+		slidesNavigation:true
+	})
+
+
+
+</script>
+</body>
+</html>
